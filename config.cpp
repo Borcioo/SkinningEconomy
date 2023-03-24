@@ -7,8 +7,6 @@ class CfgPatches
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
-			"DZ_Data",
-			"DZ_Gear_Tools"
 		};
 	};
 };
@@ -16,16 +14,21 @@ class CfgMods
 {
 	class SkinningEconomy
 	{
-		dir="SkinningEconomy";
-		picture="";
-		action="";
-		hideName=1;
-		hidePicture=1;
+		dir="SE";
+		picture="SE/GUI/textures/se_icon.paa";
+		logo = "SE/GUI//textures/se_icon.paa";
+		logoSmall = "SE/GUI//textures/se_icon.paa";
+		logoOver = "SE/GUI//textures/se_icon.paa";
+		action="https://github.com/Borcioo/SkinningEconomy";
+		hideName=0;
+		hidePicture=0;
 		name="SkinningEconomy";
 		credits="Borek";
 		author="Borek";
-		authorID="0";
-		version="1";
+		authorID="76561197995908678";
+		tooltip = "Skinning Economy";
+		overview = "This is a SkinningEconomy for DayZ SA. You finally have control over animal skinning drops";
+		version="1.0.1";
 		extra=0;
 		type="mod";
 		dependencies[]=
@@ -41,7 +44,7 @@ class CfgMods
 				value="";
 				files[]=
 				{
-					"SkinningEconomy/Scripts/3_Game"
+					"SE/Scripts/3_Game"
 				};
 			};
 			class worldScriptModule
@@ -49,7 +52,7 @@ class CfgMods
 				value="";
 				files[]=
 				{
-					"SkinningEconomy/Scripts/4_World"
+					"SE/Scripts/4_World"
 				};
 			};
 			class missionScriptModule
@@ -57,7 +60,7 @@ class CfgMods
 				value="";
 				files[]=
 				{
-					"SkinningEconomy/Scripts/5_Mission"
+					"SE/Scripts/5_Mission"
 				};
 			};
 		};

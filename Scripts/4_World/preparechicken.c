@@ -99,18 +99,18 @@ modded class PrepareChicken
 		ItemBase deadChicken = ingredients[0];
 		ItemBase resultBones = results[0];
 
-        ref array<map<string, string>> chickenConfig =  g_Game.GetSkinningConfig().GetChickenConfig()
+        ref array<map<string, string>> chickenConfig =  g_Game.GetSkinningConfig().GetChickenConfig();
 
         int chickenBreastMeatMinCount = chickenConfig.Get(0).Get("ChickenBreastMeatMinCount").ToInt();
         int chickenBreastMeatMaxCount = chickenConfig.Get(0).Get("ChickenBreastMeatMaxCount").ToInt();
         int chickenBreastMeatMin = chickenConfig.Get(0).Get("ChickenBreastMeatMin").ToInt();
         int chickenBreastMeatMax = chickenConfig.Get(0).Get("ChickenBreastMeatMax").ToInt();
 
-        string chickenFeatherON = chickenConfig.Get(0).Get("ChickenFeatherON")
+        string chickenFeatherON = chickenConfig.Get(0).Get("ChickenFeatherON");
         int chickenFeatherMin = chickenConfig.Get(0).Get("ChickenFeatherMin").ToInt();
         int chickenFeatherMax = chickenConfig.Get(0).Get("ChickenFeatherMax").ToInt();
 
-        string chickenBonesON = chickenConfig.Get(0).Get("chickenBonesON")
+        string chickenBonesON = chickenConfig.Get(0).Get("chickenBonesON");
         int chickenBonesMin = chickenConfig.Get(0).Get("ChickenBonesMin").ToInt();
         int chickenBonesMax = chickenConfig.Get(0).Get("ChickenBonesMax").ToInt();
 
