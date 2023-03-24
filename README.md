@@ -1,5 +1,3 @@
-[img]https://i.imgur.com/cfcvku1.gif[/img]
-
 ## Mod can be use as server side mod, from test there is no errors, and all works serverside
 
 
